@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <cs50.h>
 
 nomespace DataTypes
 {
