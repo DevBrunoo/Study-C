@@ -1,0 +1,25 @@
+Em nossa instância do VS Code, temos outro comando, debug50, para nos ajudar a depurar programas. Esta é uma ferramenta que executa o depurador embutido no 
+VS Code, um programa que percorrerá nossos próprios programas passo a passo e nos permitirá examinar variáveis ​​e outras informações enquanto nosso programa 
+está em execução.
+
+
+i++ é conhecido como pós-incremento, enquanto ++i é chamado de pré-incremento . i++ é pós-incremento porque incrementa o valor de i em 1 após o término da 
+operação. Aqui valor de j = 1 , mas i = 2 . Aqui o valor de i será atribuído a j primeiro, e então i será incrementado.
+
+Memória
+Em C, temos diferentes tipos de variáveis ​​que podemos usar para armazenar dados. Cada variável é armazenada com um número fixo de bytes e, para a maioria dos sistemas de computador, cada tipo tem o seguinte tamanho:
+bool, 1 byte
+Um valor booleano pode ser tecnicamente representado com apenas um bit, mas para simplificar nossos computadores usam um byte inteiro.
+char, 1 byte
+Lembre-se que com ASCII, temos no máximo 256 caracteres diferentes possíveis, pois há 8 bits em um byte.
+double, 8 bytes
+Duas vezes mais bytes que um arquivo float.
+float, 4 bytes
+int, 4 bytes
+Lembre-se de que um inteiro de 32 bits pode representar cerca de 4 bilhões de valores diferentes.
+long, 8 bytes
+Duas vezes mais bytes que um arquivo int.
+string, ? bytes
+A stringocupa uma quantidade variável de espaço, pois pode ser curto ou longo.
+
+
