@@ -23,3 +23,7 @@ string, ? bytes
 A stringocupa uma quantidade variável de espaço, pois pode ser curto ou longo.
 
 
+ A expressão %[^\n] em C é usada para ler geralmente a linha inteira.
+
+“\n” é uma sequência de escape em C que imprime uma nova linha. 
+
