@@ -27,3 +27,15 @@ A stringocupa uma quantidade variável de espaço, pois pode ser curto ou longo.
 
 “\n” é uma sequência de escape em C que imprime uma nova linha. 
 
+
+
+Copilar
+
+Utilizamos make que e apenas um programa clang para copilar o codigo por meio do terminal.
+Podemos copilar um codigo utilizamos make mais o nome do arquivo "make arquivo.c" 
+Para execuatr o codigo use " ./ " use essa sequencia de carcteres para ativar o codigo. 
+Podemos utilizar mais argumentos como " clang -o hello hello.c " aonde clang e o programa e -o hello  e  hello.c sao argumentos 
+Make pode ser mais util pois ja gera alguns arquivos nescessarios para executar o codigo.
+
+
+Podemos usar %c para imprimir cada caractere 
