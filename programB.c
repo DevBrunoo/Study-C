@@ -2,14 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#define get_string(__VA_ARGS__) get_string(NULL, __VA_ARGS__)
 
 
 
 int main(void)
 { 
+    int gets_string;
+    int text;
+    int i;
     //Prompt user for text
-    string text = get_string("Text: ");
+    string text = gets_string("Text: ");
     printf("%s\n", text);
 
     //Count the numer of letters there are in the //-2
