@@ -44,3 +44,8 @@ Podemos usar %c para imprimir cada caractere
 
 Variaveis globais sao aquelas variaveis que podem ser vistas em todas as funcoes, e isso e bastante util quando se constri grandes programas aonde pode se determinar uma variavel so para diversas funcoes.
 As vezes tambem e util declarar e iniciavilizar uma variavel dentro de um for loop, isso cria uma varivael que pode ser acessada dentro dos forColchetes -loop
+
+
+
+Gratidão por você ter separado um tempo para ver o projeto
+Fique a vontade para me mandar mensagens.
