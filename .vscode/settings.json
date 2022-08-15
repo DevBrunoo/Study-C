@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "*.ejs": "html",
-        "functionsCS50.C": "cpp"
+        "functionsCS50.C": "cpp",
+        "ctype.h": "c"
     }
 }
