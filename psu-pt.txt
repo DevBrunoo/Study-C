@@ -1,0 +1,3 @@
+inicio
+    real soma = 0..0;
+    inteiro num_lidos
