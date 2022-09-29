@@ -150,22 +150,24 @@ Usamos a funcao create_family, que era para alocar memoria para uma nova pessoa,
 Em seguida nos damos com dois casos, um em que gerações e maior que 1, o que significa que essa pessoa que acabamos de alocar tem pais porem ainda temos que lidar com o caso quando a pessoa não tem pais, que representaremos no programa 
 
 Vamos começar com a geracao que tem pais, o que precisamos fazer nesse caso e chamar a funcao create_family para criar arvores geneologicas pais, o que significa que se chamamos create_family  para  gerar duas geracoes de pais, com isso precisamos criar arvores parentais e geneologicas, cada uma com uma geração de pais, gerando arvores genealogicas que e cada uma com uma geraçao de pais gerando arvores genealogicas que tem um numero a menos de gerações.
-Para criar uma arvoe geneologica pai, chamamos a funcao create_family em geracoes menos 1,  uma geracao a menos do que as geraçoes com quais começamos. Agora depois de gerar esses pais, o proximo passo sera herdar um alelo de cada um desses pais, fazeremos isso da seguinte forma vamos usar essas notação de seta para acessar algum campo, se tivermos uma pessoa p, podemos acessar seu primeiro pai a seta p 0. Uma vez que temos esse pai podemos acessar os alelos dele.
+Para criar uma arvore geneologica pai, chamamos a funcao create_family em geracoes menos 1,  uma geracao a menos do que as geraçoes com quais começamos. Agora depois de gerar esses pais, o proximo passo sera herdar um alelo de cada um desses pais, fazeremos isso da seguinte forma vamos usar essas notação de seta para acessar algum campo, se tivermos uma pessoa p, podemos acessar seu primeiro pai a seta p 0. Uma vez que temos esse pai podemos acessar os alelos dele.
 Lembresse que alelos e uma matriz de dois caracteres, ha alelo como 0 e há alelo como 1 e nos so precisamos escolher um deles aleatoriamente. 
 
-Para obtermos um numero aleatorio que e 0 e 1, podemos usar a funçao rand, que nos dara um inteiro aleatorio. 
+Para obtermos um numero aleatorio que e 0 e 1, podemos usar a funçao rand, que nos dara um inteiro aleatorio.
+
 Entao usamos mod 2 para obter o resto quando dividido por 2, se um numero for impar entao iremos obter 1, o efeito por tras disso e que na metade da vezes obteremos 0 e na outra 1 com isso conseguimos escolher de forma aleatoria o do pai e o do filho. 
 Repetimos a mesma coisa para o segundo pai, dentro do alelo 1 da seta p, vamos armazenar um alelo do segundo pai, usamos a mesma logica de antes usando mod 2 para nos obter um numero psudo aleatorio que sera 0 para o primeiro alelo ou 1 para o segundo alelo. 
-E;se foi projetado para lidar com o individo que nao tem dados dos pais, nesse caso se nao tivermos dados dos pais esses dois ponteiros sao definidos como NULL.
+Esse foi projetado para lidar com o individo que nao tem dados dos pais, nesse caso se nao tivermos dados dos pais esses dois ponteiros sao definidos como NULL.
 
 Especificando alelos de tipo sanguineio como 0 ou A e B para essas pessoas tambem, e se eles nao tiverem pai vamos apenas gerar alelo aleatorio que os darao alelos aleatorios. Depois de alocar toda essa memoria usando mallocm precisamos ter certeza que a liberamos entao usamos a função free_family se a entrada para duncao free_family for nula entao nao ha nada que nossa funcao precisa fazer, porem nao esqueca de libertar os pais que podem ter os seus pais para serem libertados entao chamamos a funcao free_familly, liberando assim sucetivamente chegamos a geracao que nao tem dados dos pais, o que significa que ambos os pais sao nulos. 
 A ultima coisa que fazeremos para via malloc chamamos a funcao free, depois passamos como entrada esse ponteiro p para liberar este ultimo dado tambem, uma vez isso feito podemos alocar memoria para todas as pessoas dentro da arvore gealogica.
 
 "
-simule seus tipos sanguíneos
-e imprimi-los e, em seguida, 
-liberar todos esses dados no final.
+O que deve ser feito
 
+1) simule seus tipos sanguíneos
+2) e imprimi-los e, em seguida, 
+3) liberar todos esses dados no final.
 
 "
 
